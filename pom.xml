@@ -13,14 +13,16 @@
         <project.java.version>1.8</project.java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <profile>
-            <id>functional-tests</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-    </properties>
 
+    </properties>
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <browser>chrome</browser>
+            </properties>
+        </profile>
+    </profiles>
     <build>
         <plugins>
             <plugin>

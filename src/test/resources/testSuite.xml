@@ -19,7 +19,7 @@
     </test>
     <test name="Test Iteration 2">
         <parameter name="moneyFrom" value="Euro"/>
-        <parameter name="moneyTo" value="US Dollar"/>
+        <parameter name="moneyTo" value="Pound"/>
         <classes>
             <class name="test.functional.ConvertionTest">
                 <methods>
