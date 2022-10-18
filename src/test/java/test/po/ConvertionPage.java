@@ -27,7 +27,7 @@ public class ConvertionPage extends MasterPO {
     public WebElement tbxContryTo;
 
     @FindBy(xpath = "//button[@type=\"submit\"]")
-    public List<WebElement> btnConvert;
+    public WebElement btnConvert;
 
     @FindBy(xpath = "//a[contains(.,'View full chart')]")
     public WebElement btnViewFullChart;
@@ -48,7 +48,8 @@ public class ConvertionPage extends MasterPO {
     }
 
     public ConvertionPage convert(){
-        wait.until(ExpectedConditions.elementToBeClickable(btnConvert.get(0))).click();
+        wait.until(ExpectedConditions.visibilityOf(btnConvert));
+        btnConvert.click();
         ((JavascriptExecutor) driver.get()).executeScript(
                 "arguments[0].scrollIntoView();", btnViewFullChart
         );
