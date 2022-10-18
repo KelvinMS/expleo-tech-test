@@ -12,8 +12,8 @@ public class DriverHelper {
 
     private static final String PROPERTYCHROME = "webdriver.chrome.driver";
     private static final String PROPERTYFIREFOX = "webdriver.gecko.driver";
-    private static final String GECKODRIVER_PATH = "" + Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "drivers", "geckodriver.exe");
-    private static final String CHROMEDRIVER_PATH = "" + Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "drivers", "chromedriver.exe");
+    private static final String GECKODRIVER_PATH = "" + Paths.get(System.getProperty("user.dir"), "src", "test", "resources", "drivers", "geckodriver.exe");
+    private static final String CHROMEDRIVER_PATH = "" + Paths.get(System.getProperty("user.dir"), "src", "test", "resources", "drivers", "chromedriver.exe");
 
     public WebDriver setupDriver(String browser) {
         browser = browser.toLowerCase();
