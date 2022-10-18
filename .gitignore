@@ -1,3 +1,6 @@
 .idea
 *.iml
-/target
+/target/generated-test-sources
+/target/maven-status
+/target/test-classes
+/target/surefire-reports
