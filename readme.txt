@@ -19,8 +19,10 @@
     
     --> **To see the Report result you can** 
         1.Go to target/extentReport.html right-click and open in browser, or directly open the file at the browser page
-        2. run the bellow coomand on terminal
+        2. run the bellow command on terminal
             -- $ start target/ExtentReport/extentReport.html
+            to see a report example
+            -- $ start target/ExtentReport/example-report.html
         3. One of the requirements of the test is to verify the result after the convertion
             at the report  on right, there's a info called "ConvertionRate:" where we can se the convertion rate for the contry paramets
             
