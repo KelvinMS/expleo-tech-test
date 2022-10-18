@@ -5,7 +5,7 @@
 - All tests are under the path - src/test/java/tets/functional
 
     --> **Develop to run single test or parallel multi-thread**
-        tu run multi-thread go to testSuite.xml and change the parameter "thread-count" to the number of threads you want
+        to run multi-thread go to testSuite.xml and change the parameter "thread-count" to the number of threads you want
     
     --> **There's some ways to trigger the test**
         1. As the project has configured to the test lifecycle, you can run the tests simply using the bellow command on terminal
