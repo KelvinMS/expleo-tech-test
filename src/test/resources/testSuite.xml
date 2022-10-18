@@ -1,0 +1,67 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" thread-count="5" parallel="tests">
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://www.xe.com/currencyconverter/"/>
+
+    <test name="Test Iteration 1">
+        <parameter name="moneyFrom" value="Brazil"/>
+        <parameter name="moneyTo" value="Canada"/>
+        <classes>
+            <class name="test.functional.ConvertionTest">
+                <methods>
+                    <include name="acessPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test Iteration 2">
+        <parameter name="moneyFrom" value="Euro"/>
+        <parameter name="moneyTo" value="US Dollar"/>
+        <classes>
+            <class name="test.functional.ConvertionTest">
+                <methods>
+                    <include name="acessPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test Iteration 3">
+        <parameter name="moneyFrom" value="China"/>
+        <parameter name="moneyTo" value="England"/>
+        <classes>
+            <class name="test.functional.ConvertionTest">
+                <methods>
+                    <include name="acessPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test Iteration 4">
+        <parameter name="moneyFrom" value="Russia"/>
+        <parameter name="moneyTo" value="Japan"/>
+        <classes>
+            <class name="test.functional.ConvertionTest">
+                <methods>
+                    <include name="acessPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test Iteration 5">
+        <parameter name="moneyFrom" value="Australia"/>
+        <parameter name="moneyTo" value="Singapore"/>
+        <classes>
+            <class name="test.functional.ConvertionTest">
+                <methods>
+                    <include name="acessPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
